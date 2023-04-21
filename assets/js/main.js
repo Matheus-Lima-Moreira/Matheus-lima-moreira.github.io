@@ -200,8 +200,8 @@ window.addEventListener('load', () => {
       this.classList.add('filter-active');
 
       portfolioIsotope.arrange({
-        filter: function () {
-          const categories = this.querySelector('.portfolio-filter').innerText.trim().toUpperCase();
+        filter: function (i, el) {
+          const categories = el.querySelector('.portfolio-filter').innerText.trim().toUpperCase();
           const filterActive = document.querySelector('#portfolio-flters li.filter-active').innerText.trim().toUpperCase();
 
           if (filterActive == 'ALL') return true;
