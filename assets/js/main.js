@@ -201,6 +201,7 @@ window.addEventListener('load', () => {
 
       portfolioIsotope.arrange({
         filter: function (i, el) {
+          console.log(el);
           const categories = el.querySelector('.portfolio-filter').innerText.trim().toUpperCase();
           const filterActive = document.querySelector('#portfolio-flters li.filter-active').innerText.trim().toUpperCase();
 
