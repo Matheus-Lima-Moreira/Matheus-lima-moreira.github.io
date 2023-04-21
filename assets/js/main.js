@@ -231,8 +231,6 @@ const portfolioDetailsLightbox = GLightbox({
 
 
 portfolioDetailsLightbox.on('slide_before_change', ({ prev, current }) => {
-  console.log('Prev slide', prev);
-  console.log('Current slide', current);
   setTimeout(() => {
     const index = current.index;
     const iframe = portfolioDetailsLightbox.activeSlide.querySelector('iframe').contentDocument.querySelector('#portfolio-details');
@@ -257,29 +255,27 @@ portfolioDetailsLightbox.on('slide_before_change', ({ prev, current }) => {
   }, 100);
 });
 
-portfolioDetailsLightbox.on('open', () => {
-  setTimeout(() => {
-    const index = portfolioDetailsLightbox.index;
-    const iframe = portfolioDetailsLightbox.activeSlide.querySelector('iframe').contentDocument.querySelector('#portfolio-details');
-    const portfolioItem = portfolioItems[index];
+portfolioDetailsLightbox.on('slide_after_load', (data) => {
+  const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+  const iframe = slideNode.querySelector('iframe').contentDocument.querySelector('#portfolio-details');
+  const portfolioItem = portfolioItems[slideIndex];
 
-    iframe.querySelector('#portfolio-title').innerHTML = portfolioItem.title;
-    iframe.querySelector('#technologies').innerHTML = portfolioItem.technologies;
-    iframe.querySelector('#link').setAttribute('href', portfolioItem.link);
-    iframe.querySelector('#link').innerHTML = portfolioItem.link;
-    iframe.querySelector('#description').innerHTML = portfolioItem.description;
-    iframe.querySelector('#github').setAttribute('href', portfolioItem.github);
-    iframe.querySelector('#github').innerHTML = portfolioItem.github;
+  iframe.querySelector('#portfolio-title').innerHTML = portfolioItem.title;
+  iframe.querySelector('#technologies').innerHTML = portfolioItem.technologies;
+  iframe.querySelector('#link').setAttribute('href', portfolioItem.link);
+  iframe.querySelector('#link').innerHTML = portfolioItem.link;
+  iframe.querySelector('#description').innerHTML = portfolioItem.description;
+  iframe.querySelector('#github').setAttribute('href', portfolioItem.github);
+  iframe.querySelector('#github').innerHTML = portfolioItem.github;
 
-    const imageItemModel = iframe.querySelector('#imageTemplate');
-    portfolioItem.images.forEach((image, index) => {
-      const imageItem = document.importNode(imageItemModel.content, true);
-      imageItem.querySelector('img').setAttribute('src', image);
-      imageItem.querySelector('img').setAttribute('width', '100%');
-      imageItem.querySelector('img').setAttribute('height', 'auto');
-      iframe.querySelector('#images').appendChild(imageItem);
-    });
-  }, 100);
+  const imageItemModel = iframe.querySelector('#imageTemplate');
+  portfolioItem.images.forEach((image, index) => {
+    const imageItem = document.importNode(imageItemModel.content, true);
+    imageItem.querySelector('img').setAttribute('src', image);
+    imageItem.querySelector('img').setAttribute('width', '100%');
+    imageItem.querySelector('img').setAttribute('height', 'auto');
+    iframe.querySelector('#images').appendChild(imageItem);
+  });
 });
 
 /**
