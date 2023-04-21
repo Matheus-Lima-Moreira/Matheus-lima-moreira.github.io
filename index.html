@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfólio • Matheus Lima</title>
+  <title>Portfolio • Matheus Lima</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <!-- <link href="assets/img/favicon.png" rel="icon"> -->
+  <link href="assets/img/logo2.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -556,7 +556,7 @@
                 <p class="portfolio-filter"></p>
                 <div class="portfolio-links">
                   <a href="" data-gallery="portfolioGallery" class="portfolio-lightbox portfolioGallery" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                  <a href="portfolio-details.html" data-customattribute="example" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -652,38 +652,7 @@
   </div>
   <!-- End Credits Section -->
 
-  <script type="text/javascript">
-    const portfolioItemModel = document.querySelector('#portfolio-item');
-
-    const projectList = [
-      {
-        title: 'Secret Word',
-        filter: 'react',
-        image: 'assets/img/portfolio/imageNotFound.png'
-      },
-      {
-        title: 'Miniblog',
-        filter: 'react',
-        image: 'assets/img/portfolio/miniBlog.png'
-      },
-      {
-        title: 'Letterboxd',
-        filter: 'react',
-        image: 'assets/img/portfolio/letterboxd.png'
-      }
-    ];
-
-    projectList.forEach(project => {
-      const portfolioItem = document.importNode(portfolioItemModel.content, true);
-      portfolioItem.querySelector('.portfolio-img').src = project.image;
-      portfolioItem.querySelector('.portfolio-title').innerHTML = project.title;
-      portfolioItem.querySelector('.portfolio-filter').innerHTML = project.filter;
-      portfolioItem.querySelector('.portfolio-item').classList.add(`filter-${project.filter}`);
-      portfolioItem.querySelector('.portfolio-links .portfolioGallery').setAttribute('href', project.image);
-      portfolioItem.querySelector('.portfolio-links .portfolioGallery').setAttribute('title', project.title);
-      document.querySelector('.portfolio-container').appendChild(portfolioItem);
-    });
-  </script>
+  <script type="module" src="assets/js/portfolioItems.js"></script>
 
   <!-- JQUERY -->
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
