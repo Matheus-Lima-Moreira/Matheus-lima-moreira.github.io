@@ -200,11 +200,17 @@ window.addEventListener('load', () => {
       this.classList.add('filter-active');
 
       portfolioIsotope.arrange({
-        filter: this.getAttribute('data-filter')
+        filter: function () {
+          const categories = this.querySelector('.portfolio-filter').innerText.trim().toUpperCase();
+          const filterActive = document.querySelector('#portfolio-flters li.filter-active').innerText.trim().toUpperCase();
+
+          if (filterActive == 'ALL') return true;
+
+          return categories.includes(filterActive);
+        }
       });
     }, true);
   }
-
 });
 
 /**

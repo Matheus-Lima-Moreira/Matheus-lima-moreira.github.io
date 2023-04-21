@@ -2,45 +2,61 @@
   {
     "title": "Secret Word",
     "category": "react",
-    "image": "assets/img/portfolio/secretWord.png",
+    "image": "assets/img/projects/secretWord/secretWord.png",
     "link": "https://matheus-lima-moreira.github.io/Secret.Word",
     "description": "Secret Word is a game where you have to guess the secret word.",
     "github": "https://github.com/Matheus-Lima-Moreira/Secret.Word",
     "technologies": "React",
     "images": [
-      "assets/img/portfolio/secretWord.png",
-      "assets/img/portfolio/secretWord2.png",
-      "assets/img/portfolio/secretWord3.png"
+      "assets/img/projects/secretWord/secretWord.png",
+      "assets/img/projects/secretWord/secretWord2.png",
+      "assets/img/projects/secretWord/secretWord3.png"
     ]
   },
   {
     "title": "Miniblog",
     "category": "react",
-    "image": "assets/img/portfolio/miniBlog.png",
+    "image": "assets/img/projects/miniBlog/miniBlog.png",
     "link": "https://matheus-lima-moreira.github.io/Miniblog/",
     "description": "Miniblog is a blog where you can create posts and comments.",
     "technologies": "React",
     "github": "https://github.com/Matheus-Lima-Moreira/Miniblog",
     "images": [
-      "assets/img/portfolio/miniBlog.png",
-      "assets/img/portfolio/miniBlog4.png",
-      "assets/img/portfolio/miniBlog3.png",
-      "assets/img/portfolio/miniBlog2.png"
+      "assets/img/projects/miniBlog/miniBlog.png",
+      "assets/img/projects/miniBlog/miniBlog4.png",
+      "assets/img/projects/miniBlog/miniBlog3.png",
+      "assets/img/projects/miniBlog/miniBlog2.png"
     ]
   },
   {
     "title": "Letterboxd",
-    "category": "react",
-    "image": "assets/img/portfolio/letterboxd.png",
+    "category": [
+      "react",
+      "typescript"
+    ],
+    "image": "assets/img/projects/letterboxd/letterboxd.png",
     "link": "https://letterboxd-ff40a.web.app/",
     "description": "Letterboxd is a movie database where you can search for movies.",
     "technologies": "React, Typescript",
     "github": "https://github.com/Matheus-Lima-Moreira/Letterboxd",
     "images": [
-      "assets/img/portfolio/letterboxd.png",
-      "assets/img/portfolio/letterboxd2.png",
-      "assets/img/portfolio/letterboxd3.png",
-      "assets/img/portfolio/letterboxd4.png"
+      "assets/img/projects/letterboxd/letterboxd.png",
+      "assets/img/projects/letterboxd/letterboxd2.png",
+      "assets/img/projects/letterboxd/letterboxd3.png",
+      "assets/img/projects/letterboxd/letterboxd4.png"
+    ]
+  },
+  {
+    "title": "The game of life",
+    "category": "javascript",
+    "image": "assets/img/projects/theGameOfLife/the.game.of.life.png",
+    "link": "https://matheus-lima-moreira.github.io/the.game.of.life/",
+    "description": "The game of life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.",
+    "technologies": "Javascript",
+    "github": "https://github.com/matheus-lima-moreira/the.game.of.life",
+    "images": [
+      "assets/img/projects/theGameOfLife/the.game.of.life.png",
+      "assets/img/projects/theGameOfLife/the.game.of.life2.png"
     ]
   }
 ]
