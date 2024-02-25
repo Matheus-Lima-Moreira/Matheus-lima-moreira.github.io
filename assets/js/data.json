@@ -1,12 +1,15 @@
 [
   {
     "title": "Secret Word",
-    "category": "react",
+    "category": [
+      "react",
+      "javascript"
+    ],
     "image": "assets/img/projects/secretWord/secretWord.png",
     "link": "https://matheus-lima-moreira.github.io/Secret.Word",
-    "description": "Secret Word is a game where you have to guess the secret word.",
+    "description": "Secret Word é um jogo onde você tem que adivinhar uma palavra chutando letras.",
     "github": "https://github.com/Matheus-Lima-Moreira/Secret.Word",
-    "technologies": "React",
+    "technologies": "React, Javascript",
     "images": [
       "assets/img/projects/secretWord/secretWord.png",
       "assets/img/projects/secretWord/secretWord2.png",
@@ -15,11 +18,14 @@
   },
   {
     "title": "Miniblog",
-    "category": "react",
+    "category": [
+      "react",
+      "javascript"
+    ],
     "image": "assets/img/projects/miniBlog/miniBlog.png",
     "link": "https://matheus-lima-moreira.github.io/Miniblog/",
-    "description": "Miniblog is a blog where you can create posts and comments.",
-    "technologies": "React",
+    "description": "Miniblog é um blog onde você pode criar, editar e excluir postagens, além de comentar e interagir com postagens de outros usuários.",
+    "technologies": "React, Javascript",
     "github": "https://github.com/Matheus-Lima-Moreira/Miniblog",
     "images": [
       "assets/img/projects/miniBlog/miniBlog.png",
@@ -36,7 +42,7 @@
     ],
     "image": "assets/img/projects/letterboxd/letterboxd.png",
     "link": "https://letterboxd-ff40a.web.app/",
-    "description": "Letterboxd is a movie database where you can search for movies.",
+    "description": "Desenvolvido um clone do site Letterboxd com funcionalidades reduzidas e diferenciadas para fins de estudos.",
     "technologies": "React, Typescript",
     "github": "https://github.com/Matheus-Lima-Moreira/Letterboxd",
     "images": [
@@ -51,12 +57,30 @@
     "category": "javascript",
     "image": "assets/img/projects/theGameOfLife/the.game.of.life.png",
     "link": "https://matheus-lima-moreira.github.io/the.game.of.life/",
-    "description": "The game of life is a cellular automaton devised by the British mathematician John Horton Conway in 1970.",
+    "description": "O jogo da vida é um autômato celular desenvolvido pelo matemático britânico John Horton Conway em 1970. É o exemplo mais bem conhecido de autômato celular.",
     "technologies": "Javascript",
     "github": "https://github.com/matheus-lima-moreira/the.game.of.life",
     "images": [
       "assets/img/projects/theGameOfLife/the.game.of.life.png",
       "assets/img/projects/theGameOfLife/the.game.of.life2.png"
+    ]
+  },
+  {
+    "title": "Smartfit challenge",
+    "category": [
+      "angular",
+      "typescript"
+    ],
+    "image": "assets/img/projects/smartfit/smartfit.png",
+    "link": "https://matheus-lima-moreira.github.io/Smartfit/",
+    "description": "O desafio Smartfit é um projeto onde você pode pesquisar unidades e ver detalhes referentes a cada uma, foi um projeto proposto para processo seletivo em época de pandemia.",
+    "technologies": "Angular, Typescript",
+    "github": "https://github.com/matheus-lima-moreira/Smartfit",
+    "images": [
+      "assets/img/projects/smartfit/smartfit.png",
+      "assets/img/projects/smartfit/smartfit2.png",
+      "assets/img/projects/smartfit/smartfit3.png",
+      "assets/img/projects/smartfit/smartfit4.png"
     ]
   }
 ]
