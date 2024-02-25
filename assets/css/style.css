@@ -1190,3 +1190,16 @@ section .container {
   height: 23rem;
   object-fit: cover;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2d0258;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #04040400;
+}
