@@ -54,10 +54,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-html {
-  background-color: #040404;
-}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1205,5 +1201,5 @@ section .container {
 }
 
 ::-webkit-scrollbar-track {
-  background: #04040400;
+  background: #040404;
 }
