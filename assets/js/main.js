@@ -1,4 +1,4 @@
-import portfolioItems from './data.json' assert { type: "json" };
+import portfolioItems from './data.json'
 
 /**
 * Template Name: Personal
